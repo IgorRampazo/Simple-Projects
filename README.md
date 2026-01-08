@@ -25,8 +25,8 @@
 
 ## Contribuidores / Contributors
 
-<a href="https://github.com/Igor-Rampazo">
-   <img src="https://github.com/Igor-Rampazo.png?size=80" width="65" style="border-radius:50%; margin-right:10px;" />
+<a href="https://github.com/IgorRampazo">
+   <img src="https://github.com/IgorRampazo.png?size=80" width="65" style="border-radius:50%; margin-right:10px;" />
 </a>
 
 <!-- Para adicionar mais contribuidores, basta duplicar o bloco <a> acima -->
