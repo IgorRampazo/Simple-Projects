@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    height: 100vh;
+    cursor: none;
+    background: rgb(27, 27, 27);
+    font-family: 'Arial', sans-serif;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.cursor::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 8px solid gray;
+    border-radius: 50%;
+    opacity: 0.5;
+    top: -8px;
+    left: -8px;
+    animation: cursorAnim2 0.5s infinite alternate;
+}
+
+.x_cursor
+{
+    color: #5566fe;
+    position: relative;
+    top: 2px;
+}
+
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.4);
+    }
+}
+
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.expand {
+    animation: cursorAnim3 0.5s forwards;
+    border: 1px solid #5566fe;
+}
+
+p {
+    font-size: 1.4em;
+}
+
+a {
+    color: teal;
+}
